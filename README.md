@@ -169,29 +169,12 @@
 - has_many :products
 
 
-## categoriesfirst
+## categories
 |column|type|options|
 |------|----|-------|
 |name|string|null: false|
+|ancestry|integer||
 - has_many :products
-
-
-## categoriessecond
-|column|type|options|
-|------|----|-------|
-|name|string|null: false|
-|category_first_id|integer|null: false|
-- has_many :products
-
-
-## categoriesthird
-|column|type|options|
-|------|----|-------|
-|name|string|null: false|
-|category_first_id|integer|null: false|
-|category_second_id|integer|null: false|
-- has_many :products
-
 
 ## brands
 |column|type|options|
