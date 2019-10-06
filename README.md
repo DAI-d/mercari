@@ -33,7 +33,7 @@
 |column|type|options|
 |------|----|-------|
 |postalcode|integer|null: false|
-|prefectures|string|null: false|
+|prefecture_id|integer|null: false, foreign_key: true|
 |city|string|null: false|
 |address|string|null: false|
 |building_name|string||
@@ -88,7 +88,7 @@
 |product_id|integer|null: false, foreign_key: true|
 - belongs_to :users
 - belongs_to :products
-- has_one :confirmpurchases
+- has_one :todopurchases
 
 ## todopurchases
 |column|type|options|
