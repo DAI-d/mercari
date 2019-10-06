@@ -15,11 +15,6 @@
 |birth_year|integer|null: false|
 |birth_month|integer|null: false|
 |birth_day|integer|null: false|
-|postalcode|integer|null: false|
-|prefectures|string|null: false|
-|city|string|null: false|
-|address|string|null: false|
-|building_name|string||
 |phone_number|integer|null: false|
 - has_one :card
 - has_many :valuations
@@ -32,6 +27,17 @@
 - has_many :products, through: :products
 - has_many :confirmpurchases
 - has_many :products, through: :confirmpurchases
+- has_one :address
+
+## address テーブル
+|column|type|options|
+|------|----|-------|
+|postalcode|integer|null: false|
+|prefectures|string|null: false|
+|city|string|null: false|
+|address|string|null: false|
+|building_name|string||
+- belongs_to :user
 
 ## cardsテーブル
 |user_id|integer|null: false, foreign_key: true|
