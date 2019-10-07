@@ -138,6 +138,7 @@
 |to_user_id|integer|null: false, foreign_key: true|
 |from_user_id|integer|null: false, foreign_key: true|
 |valuation_option_id|integer|null: false, foreign_key: true|
+
 - belongs_to :to_user
 - belongs_to :from_user
 - belongs_to :valuationsoption
