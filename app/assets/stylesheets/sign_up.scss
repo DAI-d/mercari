@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  resize: both;
+  width: 100vw;
+  height: 100vh;
+  background: #F5F5F5;
+  font-family: 'Source Sans Pro', Helvetica , Arial, 'æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“', 'YuGothic', 'ãƒ¡ã‚¤ãƒªã‚ª', 'Meiryo', sans-serif;
+}
+
+
+.header__user__signup{
+  height: 20%;
+  line-height :128px; 
+  background: #F5F5F5;
+    &__image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height :200px;
+    }
+}
+
+.main{
+  background-color: #FFFFFF;
+  height :50%;
+  margin: 0px 370px;
+  text-align: center;
+  margin-bottom: 30px;
+  
+  &__upper{
+    padding :30px;
+    font-size :22px;
+    font-weight: bold;
+    border-bottom: solid 1px #F5F5F5;
+  }
+  &__lower{
+    padding: 10px 40px 40px 40px;
+    margin: 0.5em auto;
+    line-height :50px;
+  
+    &__email{
+      background: #EA3732;
+      width: 300px;
+      margin: auto;
+      line-height :50px;
+      margin-top :30px;
+      text-decoration: none;
+      a{
+        display: flex;
+        justify-content: start;
+        width:300px;
+        text-decoration: none;
+      }
+      .mail_image{
+       padding-left: 10px;
+      }
+      .email{
+        padding-left: 0px;
+        color:#FFFFFF;
+      }
+    }
+
+    &__facebook{
+      background: #385185;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      border-radius: 4px;
+      margin-top :10px;
+      width: 300px;
+      a{
+        display: flex;
+        justify-content: start;
+        width:300px;
+        text-decoration: none;
+      }
+      .facebook_image{
+        padding-left: 10px;
+       }
+      .facebook{
+          color:#FFFFFF;
+        }
+    }
+
+    &__google{
+      background: #FFFFFF;
+      width: 300px;
+      margin: auto;
+      border-radius: 4px;
+      line-height :50px;
+      display: flex;
+      justify-content: space-between;
+      margin-top :10px;
+      
+      a{
+        display: flex;
+        justify-content: start;
+        width:300px;
+        text-decoration: none;
+      }
+
+      .google{
+        color:#9A9A9A;
+
+      }
+      .google__image{
+       
+      }
+
+      
+    }
+  }
+}
+
+.footer{
+  background: #F5F5F5;
+  height :20%;
+  padding:40px 0px;
+  margin:0px 370px;
+  text-align: center;
+  
+
+  &__upper{
+    font-size :14px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .footer__img{
+    margin:auto;
+  }
+  &__lower{
+    font-size:13px;
+    text-align: center;
+  }
+  
+}
