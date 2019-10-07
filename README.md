@@ -82,7 +82,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |image|string|null: false|
-- belongs_to :user
+- belongs_to :product
 
 
 
@@ -119,10 +119,11 @@
 ## messagesテーブル
 |column|type|options|
 |------|----|-------|
-|from_user_id|integer|null: false, foreign_key: true|
 |to_user_id|integer|null: false, foreign_key: true|
+|from_user_id|integer|null: false, foreign_key: true|
 |content|string|null: false|
-- belongs_to :user
+- belongs_to :to_user
+- belongs_to :from_user
 - has_one :todomessage
 
 ## todomessagesテーブル
@@ -137,7 +138,8 @@
 |to_user_id|integer|null: false, foreign_key: true|
 |from_user_id|integer|null: false, foreign_key: true|
 |valuation_option_id|integer|null: false, foreign_key: true|
-- belongs_to :user
+- belongs_to :to_user
+- belongs_to :from_user
 - belongs_to :valuationsoption
 
 ## valuationsoptions
@@ -198,15 +200,15 @@
 |------|----|-------|
 |to_product_id|integer|null: false, foreign_key: true|
 |from_user_id|integer|null: false, foreign_key: true|
-- belongs_to :products
-- belongs_to :users
+- belongs_to :product
+- belongs_to :user
 
 ## points
 |column|type|options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |point|integer|null: false|
-- belongs_to :users
+- belongs_to :user
 
 ## contacts
 |column|type|options|
