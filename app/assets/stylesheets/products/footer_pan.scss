@@ -1,0 +1,27 @@
+.footer-pan{
+  border-top: 0.5px solid #eeeeee;
+  font-size: 10px;
+  height: 30px;
+  &--inner{
+    width: 600px;
+    margin: 0 auto;
+    line-height: 30px;
+    ul{
+      display: flex;
+      a{
+        text-decoration: none;
+        color: #333333;
+        &:hover{
+          border-bottom: 0.5px #333333 solid;
+          opacity: 0.7;
+        }
+      }
+      li{
+        padding-right: 5px;
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
