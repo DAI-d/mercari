@@ -18,9 +18,7 @@
 |phone_number|integer|null: false|
 - has_one :card, dependent: :destroy
 - has_many :valuations, dependent: :destroy
-- has_many :users, through: :valuations, dependent: :destroy
 - has_many :messages, dependent: :destroy
-- has_many :users, through: :messages, dependent: :destroy
 - has_many :products, dependent: :destroy
 - has_many :points, dependent: :destroy
 - has_many :likes, dependent: :destroy
@@ -69,7 +67,7 @@
 - belongs_to :size
 - belongs_to :condition
 - belongs_to :deliveryday
-- belongs_to :shippingfee
+- belongs_to :shippingfee#0295EE
 - belongs_to :shippingmethod
 - belongs_to :brand
 - belongs_to :category
