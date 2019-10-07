@@ -1,0 +1,40 @@
+-# %main.l-container.clearfix
+
+
+
+
+-#   .main_profile
+-#     %section.main_profile-container
+-#       %h2.profile プロフィール
+-#       %form{:action => "https://www.mercari.com/jp/mypage/profile/", :method => "POST"}
+-#         %input{:name => "__csrf_value", :type => "hidden", :value => "58fe1c80a85bd0898c9f55491c5385585766f0c59caaabaa85ae20aafc3acecc420e6a88226d7c7db80edefa6eb54088e231550e8fc4b8a0e203348db33ac153d"}/
+-#         .setting-profile-icon
+-#           %figure
+-#             %img{:height => "60", :src => "//static.mercdn.net/thumb/members/877333630.jpg?1516368585", :width => "60"}/
+-#           %input.input-default{:name => "nickname", :placeholder => "例)AYA☆セール中", :type => "text", :value => "ヨウジ、ギャルソン モード服販売！"}/
+-#         .setting-profile-content
+-#           %textarea.textarea-default{:name => "introduction", :placeholder => "例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪"}
+-#             -# :preserve
+-#               -# こんにちは！
+              
+-#               -# プロフィールを読んで頂きありがとうございます！
+              
+            
+-#           %input{:name => "after_save_callback", :type => "hidden", :value => "https://www.mercari.com/jp/mypage/profile/"}/
+-#           %button.btn-default.btn-red{:type => "submit"} 変更する
+.l-container
+  .profile
+    .profile_upper
+      プロフィール
+    .profile_center
+      .profile_center_icon
+        =image_tag "s07_m.png", class: "profile_icon"
+        -# %img{alt: "icon", width:"60", height: "60", class: "icon"}
+      .profile_center_nickname
+        %input{maxlength: "20", name: "nickname", size: "40", type: "text", class: "nickname", placeholder: "例)AYA☆セール中"}
+    .profile_lower
+      .profile_lower_textarea
+        %textarea{maxlength: "1000", name: "introduction", class: "introduction", placeholder: "例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪" }
+        .profile_lower_button
+          %input{type: "submit", value: "変更する", class:"btn" }
+        
