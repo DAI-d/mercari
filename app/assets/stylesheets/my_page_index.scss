@@ -1,0 +1,131 @@
+.mypage__header{
+  height:150px;
+  background: #3D3D3D;
+}
+
+.mypage-area{
+  background: #F5F5F5;
+}
+
+.mypage__content{
+  width: 1020px;
+  height: 100vh;
+  padding:40px 0;
+  margin: auto;
+}
+
+.mypage--left{
+  float: left;
+}
+
+.side-bar{
+  width:280px;
+  margin:0 40px 0 0;
+  box-sizing: border-box;
+  &--upper__menu,
+  &--center__menu,
+  &--lower__menu{
+    background: #ffffff;
+    height: 48px;
+    border-top: 1px solid #eee;
+    padding:16px;
+  }
+}
+
+.side-bar--center__title,
+.side-bar--lower__title{
+  margin:40px 0 0;
+  font-size:16px;
+}
+
+.side-bar-link{
+  text-decoration: none;
+}
+
+a:link{color:#3D3D3D;}
+a:visited{color:#3D3D3D;}
+
+li{
+  list-style: none;
+}
+
+.mypage--right{
+  float: left;
+}
+
+.mypage--right__main{
+  background: skyblue;
+  height:100vh;
+  width:700px;
+}
+
+.mypage--right--upper{
+  height:200px;
+  background: url("mypage_user_bg.png");
+  position: relative;
+  text-align: center;
+}
+
+.mypage__user-icon{
+  position: relative;
+  top:45px;
+}
+
+.mypage__user-name{
+  position: relative;
+  // margin:0 auto;
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mypage__user-status{
+  margin: 8px 0 0;
+}
+
+.user-icon{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+}
+
+span{
+  font-weight: bold;
+}
+
+
+.mypage__tab-container{
+}
+
+.mypage__tab-container__tab{
+  display:flex;
+  height:74px;
+  color:#333333;
+  font-weight: bold;
+  &--left{
+    width:50%;
+    background: #ffffff;
+    text-align: center;
+    line-height:72px;
+    border-top:solid red 2px;
+    box-sizing: border-box;
+  }
+  &--right{
+    width:50%;
+    background: #eeeeee;
+    text-align: center;
+    line-height:74px;
+  }
+}
+
+.mypage__tab-container__info{
+
+}
+
+.mypage__tab-container__btn{
+
+}
+
+.mypage__purchased-product{
+
+}
