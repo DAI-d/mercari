@@ -24,14 +24,13 @@
 - has_many :products
 - has_many :points
 - has_many :likes
-- has_many :products, through: :products
 - has_many :confirmpurchases
-- has_many :products, through: :confirmpurchases
 - has_one :address
 
 ## address テーブル
 |column|type|options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
 |postalcode|integer|null: false|
 |prefecture_id|integer|null: false, foreign_key: true|
 |city|string|null: false|
@@ -40,11 +39,13 @@
 - belongs_to :user
 
 ## cardsテーブル
+|column|type|options|
+|------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |card_number|integer|null: false|
 |expiration_date|integer|null: false|
 |security_code|integer|null: false|
-- belongs_to user
+- belongs_to :user
 
 ## productsテーブル
 |column|type|options|
@@ -65,18 +66,15 @@
 |brand_id|integer||
 |size_id|integer|null: false, foreign_key: true|
 - belongs_to :user
-- has_many :users, through: :confirmpurchases
 - has_many :confirmpurchases
-- belongs_to :sizes
-- belongs_to :conditions
-- belongs_to :deliverydays
-- belongs_to :shippingfees
-- belongs_to :shippingmethods
-- belongs_to :brands
-- belongs_to :categoriesfirst
-- belongs_to :categoriessecond
-- belongs_to :categoriesthird
-- belongs_to :prefectures
+- belongs_to :size
+- belongs_to :condition
+- belongs_to :deliveryday
+- belongs_to :shippingfee
+- belongs_to :shippingmethod
+- belongs_to :brand
+- belongs_to :category
+- belongs_to :prefecture
 - has_many :comments
 - has_many :likes
 - has_many :users, through: :likes
@@ -87,14 +85,14 @@
 |user_id|integer|null: false, foreign_key: true|
 |product_id|integer|null: false, foreign_key: true|
 - belongs_to :users
-- belongs_to :products
-- has_one :todopurchases
+- belongs_to :product
+- has_one :todopurchase
 
 ## todopurchases
 |column|type|options|
 |------|----|-------|
 |confirm_purchase_id|integer|null: false, foreign_key: true|
-- belongs_to :confirmpurchases
+- belongs_to :confirmpurchase
 
 ## conditionsテーブル
 |column|type|options|
@@ -109,7 +107,7 @@
 |from_user_id|integer|null: false, foreign_key: true|
 |to_producr_id|integer|null: false, foreign_key: true|
 |content|string|null: false|
-- belongs_to :products
+- belongs_to :product
 
 ## messagesテーブル
 |column|type|options|
@@ -117,14 +115,14 @@
 |from_user_id|integer|null: false, foreign_key: true|
 |to_user_id|integer|null: false, foreign_key: true|
 |content|string|null: false|
-- belongs_to :users
-- has_one :todomessages
+- belongs_to :user
+- has_one :todomessage
 
 ## todomessagesテーブル
 |column|type|options|
 |------|----|-------|
 |message_id|integer|null: false, foreign_key: true|
-- belongs_to :messages
+- belongs_to :message
 
 ## valuations
 |column|type|options|
@@ -133,7 +131,7 @@
 |from_user_id|integer|null: false, foreign_key: true|
 |valuation_option_id|integer|null: false, foreign_key: true|
 - belongs_to :user
-- belongs_to :valuationsoptions
+- belongs_to :valuationsoption
 
 ## valuationsoptions
 |column|type|options|
