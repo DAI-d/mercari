@@ -1,0 +1,44 @@
+.header__user__signup
+  .header__user__signup__image
+    = link_to image_tag("mercari_user_signin_top.png")
+
+.main
+  .main__upper
+    新規会員登録
+  .main__lower
+    .main__lower__email
+      = link_to "#" do
+        %span.mail_image 
+          = image_tag "mail.png" 
+        %p.email
+          メールアドレスで登録する
+    .main__lower__facebook
+      = link_to "#" do
+        %span.facebook__image
+          = image_tag "facebook.png"
+        %p.facebook
+          facebookで登録する
+    .main__lower__google
+      = link_to "#" do
+        %span.google__image
+          = image_tag "google.png"
+        %p.google
+          googleで登録する
+    
+
+
+.footer
+  .footer__upper
+    %ul.footer__upper__left
+      %li 
+      = link_to 'プライバシーポリシー', '#'
+    %ul.footer__upper__center
+      %li
+      = link_to 'メルカリ利用規約', '#'
+    %ul.footer__upper__right
+      %li 
+      = link_to '特定商品に関する表記', '#'
+  .footer__img
+    = link_to image_tag("mercari_user_signin.png")
+    .footer__lower
+      2019 mercari
