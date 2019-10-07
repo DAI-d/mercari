@@ -1,0 +1,161 @@
+html{
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container{
+  width: 460px;
+  margin: 28px auto 0;
+}
+
+.product-container{
+  background-color: #ffffff;
+  &__inner{
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px 0 15px;
+    &--upper{
+      width: 90%;
+      margin: 0 auto;
+      h2{
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        padding-top: 8px;
+        font-size: 9px;
+        color: #8b8b8b;
+        text-align: left;
+      }
+    }
+    &--center{
+      display: flex;
+      justify-content: space-around;
+      margin: 15px auto;
+      width: 100%;
+      .imagekari{
+        width: 190px;
+        height: 250px;
+        background-color: yellow;
+      }
+      table, tr, th, td{
+        width: 190px;
+        border: 0.5px #f5f5f5 solid;
+        font-size: 9px;
+        line-height: 1.5rem;
+        a{
+          color: #0295EE;
+          text-decoration: none;
+          &:hover{
+            border-bottom: 0.5px #0295EE solid;
+            opacity: 0.7;
+          }
+        }
+      }
+      th{
+        background-color: #fafafa;
+        padding: 0 5px;
+      }
+      td{
+        padding: 0 5px;
+      }
+    }
+    &--lower{
+      &--upper{
+        display: flex;
+        justify-content: center;
+        h1{
+          font-size: 24px;
+          font-weight: bold;
+        }
+        span{
+          padding-left: 15px;
+          font-size: 6px;
+          vertical-align: sub;
+          line-height: 44px;
+        }
+        p{
+          font-size: 10px;
+          vertical-align: sub;
+          line-height: 44px;
+        }
+      }
+      .to-purchase-button{
+        width: 95%;
+        margin: 0 auto;
+          a{
+            display: block;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-decoration: none;
+            border: none;
+            background-color: #EA352D;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+          }
+      }
+      &--center{
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 15px;
+        font-size: 12px;
+        color: #333333;
+      }
+      &--lower{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 20px;
+        line-height: 20px;
+        .how-many-likes{
+          height: 20px;
+          padding: 3px 10px;
+          border-radius: 13px;
+          background-color: #f5f5f5;
+          a{
+            display: flex;
+            font-size: 9px;
+            color: #333333;
+            text-decoration: none;
+            p{
+              padding: 0 3px;
+            } 
+          }
+        }
+        .houkoku{
+          height: 20px;
+          padding: 3px 10px;
+          border-radius: 10px;
+          background-color: #f5f5f5;
+          a{
+            display: flex;
+            font-size: 9px;
+            color: #333333;
+            text-decoration: none;
+            p{
+              padding: 0 3px;
+            } 
+          }
+        }
+        .torikumi{
+          height: 20px;
+          padding: 3px 10px;
+          text-align: center;
+          a{
+            display: flex;
+            font-size: 9px;
+            color: #0099E8;
+            text-decoration: none;
+            p{
+              padding: 0 3px;
+            } 
+          }
+        }
+      }
+    }
+  }
+}
