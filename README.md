@@ -16,16 +16,16 @@
 |birth_month|integer|null: false|
 |birth_day|integer|null: false|
 |phone_number|integer|null: false|
-- has_one :card
-- has_many :valuations
-- has_many :users, through: :valuations
-- has_many :messages
-- has_many :users, through: :messages
-- has_many :products
-- has_many :points
-- has_many :likes
-- has_many :confirmpurchases
-- has_one :address
+- has_one :card, dependent: :destroy
+- has_many :valuations, dependent: :destroy
+- has_many :users, through: :valuations, dependent: :destroy
+- has_many :messages, dependent: :destroy
+- has_many :users, through: :messages, dependent: :destroy
+- has_many :products, dependent: :destroy
+- has_many :points, dependent: :destroy
+- has_many :likes, dependent: :destroy
+- has_many :confirmpurchases, dependent: :destroy
+- has_one :address, dependent: :destroy
 
 ## address テーブル
 |column|type|options|
@@ -52,7 +52,6 @@
 |------|----|-------|
 |name|string|null: false|
 |price|integer|null: false|
-|image|string|null: false|
 |detail|text|null: false|
 |condition|integer|null: false, foreign_key: true|
 |shipping_fee|integer|null: false, foreign_key: true|
@@ -75,9 +74,19 @@
 - belongs_to :brand
 - belongs_to :category
 - belongs_to :prefecture
-- has_many :comments
-- has_many :likes
-- has_many :users, through: :likes
+- has_many :comments, dependent: :destroy
+- has_many :likes, dependent: :destroy
+- has_many :users, through: :likes, dependent: :destroy
+- has_many :images
+
+## images
+|column|type|options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|image|string|null: false|
+- belongs_to :user
+
+
 
 ## confirmpurchases
 |column|type|options|
