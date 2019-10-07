@@ -1,0 +1,16 @@
+.sns-links-area{
+  background-color: white;
+  height: 100px;
+  &--inner{
+    margin: 0 auto;
+    padding: 50px;
+    ul{
+      display: flex;
+      justify-content: center;
+      // あとでアイコン追加します///////////////////////////
+      li{
+        padding: 0 5px; 
+      }
+    }
+  }
+}

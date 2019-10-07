@@ -1,0 +1,105 @@
+.mypage__header
+.mypage-area
+  .mypage__content
+    .mypage--left
+      .side-bar
+        .side-bar--upper
+          %li.side-bar--upper__menu
+            = link_to 'マイページ', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+          %li.side-bar--upper__menu
+            = link_to 'お知らせ', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+          %li.side-bar--upper__menu
+            = link_to 'やることリスト', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to 'いいね！一覧', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to '出品する', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to '出品した商品-出品中', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to '出品した商品-取引中', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to '出品した商品-売却済み', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to '出品した商品-取引中', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to '出品した商品-過去の取引', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to 'ニュース一覧', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to '評価一覧', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to 'ガイド', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--upper__menu
+            = link_to 'お問い合わせ', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+        .side-bar--center
+          .side-bar--center__title
+            メルペイ
+          %li.side-bar--center__menu
+            = link_to '残高・振込申請', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--center__menu
+            = link_to 'ポイント', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+        .side-bar--lower
+          .side-bar--lower__title
+            設定
+          %li.side-bar--lower__menu
+            = link_to 'プロフィール', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right          
+          %li.side-bar--lower__menu
+            = link_to '発送元・お届け先住所変更', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+          %li.side-bar--lower__menu
+            = link_to '支払い方法', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+          %li.side-bar--lower__menu
+            = link_to 'メール/パスワード', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+          %li.side-bar--lower__menu
+            = link_to '本人情報', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+          %li.side-bar--lower__menu
+            = link_to '電話番号の確認', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+          %li.side-bar--lower__menu
+            = link_to 'ログアウト', root_path ,class: 'side-bar-link'
+            %i.icon-arrow-right
+    .mypage--right
+      .mypage--right__main
+        .mypage--right--upper
+          .mypage__user-icon
+            = image_tag 'user_default.png', class: 'user-icon'
+            .mypage__user-name
+              SUSUMUMARU
+            .mypage__user-status
+              評価
+              %span 100 
+              出品数
+              %span 0
+        .mypage__tab-container
+          .mypage__tab-container__tab
+            .mypage__tab-container__tab--left
+              お知らせ
+            .mypage__tab-container__tab--right
+              やることリスト
+          .mypage__tab-container__info
+            .info-box
+            .mypage__tab-container__info
+            .mypage__tab-container__info
+          .mypage__tab-container__btn
+        .mypage__purchased-product
