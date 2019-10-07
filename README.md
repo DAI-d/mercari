@@ -122,8 +122,8 @@
 |to_user_id|integer|null: false, foreign_key: true|
 |from_user_id|integer|null: false, foreign_key: true|
 |content|string|null: false|
-- belongs_to :to_user
-- belongs_to :from_user
+- belongs_to :user, foreign_key: to_user_id
+- belongs_to :user, foreign_key: from_user_id
 - has_one :todomessage
 
 ## todomessagesテーブル
@@ -139,8 +139,8 @@
 |from_user_id|integer|null: false, foreign_key: true|
 |valuation_option_id|integer|null: false, foreign_key: true|
 
-- belongs_to :to_user
-- belongs_to :from_user
+- belongs_to :user, foreign_key: to_user_id
+- belongs_to :user, foreign_key: from_user_id
 - belongs_to :valuationsoption
 
 ## valuationsoptions
