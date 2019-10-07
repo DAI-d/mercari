@@ -1,19 +1,4 @@
-%header.header
-  .header__upper
-    %ul.header__upper--logo
-      %li
-        L
-      %li
-        mercari
-    %input{type: "text", placeholder: "何かお探しですか？"}
-
-  .header__lower
-    %ul.header__lower--left
-      %li fa カテゴリーから探す
-      %li fa ブランドから探す
-    %ul.header__lower--right
-      %li.new-user-resistration 新規会員登録
-      %li.log-in ログイン
+= render 'shared/header'
 .slider
 .popular-category-area
   .popular-category-area__top
@@ -101,3 +86,5 @@
         %li.item
         %li.item
         %li.item
+
+= render 'shared/footer'
