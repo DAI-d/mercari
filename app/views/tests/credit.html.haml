@@ -1,0 +1,22 @@
+-# = render 'header'
+%br
+%br
+%br
+.my-page-container
+  .my-page-container--upper
+    %h2 支払い方法
+  .my-page-container--center
+    .my-page-container--center--inner
+      .my-page-container--center--inner--upper
+        %h3 クレジットカード一覧
+      .my-page-container--center--inner--lower
+        = link_to "" do
+          %span 円
+          %p クレジットカードを追加する
+  .my-page-container--lower
+    .my-page-container--lower--inner
+      = link_to "" do
+        %p 支払い方法について
+        %span >
+= form_for "" do |f|
+  = f.text_area :name
