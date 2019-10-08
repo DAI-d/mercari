@@ -9,7 +9,7 @@
 
 .mypage__content{
   width: 1020px;
-  height: 100vh;
+  height: 1300px;
   padding:40px 0;
   margin: auto;
 }
@@ -29,16 +29,36 @@
     height: 48px;
     border-top: 1px solid #eee;
     padding:16px;
+    box-sizing: border-box;
+    &__title{
+      background: #eeeeee;    
+    }
   }
 }
+
+.side-bar--upper__menu__title{
+  width:280px;
+  margin:0 40px 0 0;
+  box-sizing: border-box;
+  height: 48px;
+  border-top: 1px solid #eee;
+  padding:16px;
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-weight: bold;
+}
+
 
 .side-bar--center__title,
 .side-bar--lower__title{
   margin:40px 0 0;
   font-size:16px;
+  font-weight: bold;
 }
 
-.side-bar-link{
+.side-bar-link,
+.info-link,
+.info-index-btn{
   text-decoration: none;
 }
 
@@ -51,19 +71,18 @@ li{
 
 .mypage--right{
   float: left;
-}
-
-.mypage--right__main{
-  background: skyblue;
-  height:100vh;
-  width:700px;
-}
-
-.mypage--right--upper{
-  height:200px;
-  background: url("mypage_user_bg.png");
-  position: relative;
-  text-align: center;
+  &__main{
+    background: #ffffff;
+    height:100%;
+    width:700px;
+    margin-bottom:50px;
+  }
+  &--upper{
+    height:200px;
+    background: url("mypage_user_bg.png");
+    position: relative;
+    text-align: center;
+  }
 }
 
 .mypage__user-icon{
@@ -89,12 +108,8 @@ li{
   border-radius: 50%;
 }
 
-span{
+.mypage__user-status span{
   font-weight: bold;
-}
-
-
-.mypage__tab-container{
 }
 
 .mypage__tab-container__tab{
@@ -118,14 +133,56 @@ span{
   }
 }
 
-.mypage__tab-container__info{
-
+.info-box{
+  display:flex;
+  min-height: 80px;
+  padding: 16px;
+  color: #333;
+  border-bottom: solid #F5F5F5 1px;
+  box-sizing: border-box;
 }
 
-.mypage__tab-container__btn{
-
+.mercari_info_icon{
+  width:48px;
+  height:48px;
 }
 
-.mypage__purchased-product{
+.info-box-right{
+  margin-left:20px;
+}
 
+.index-view-btn{
+  display: block;
+  height: 56px;
+  margin: 0 auto;
+  background: #eee;
+  color: #333;
+  line-height: 56px;
+  text-align: center;
+}
+
+.mypage__tab-container__lower{
+  padding:16px;
+  text-align: center;
+}
+
+.info-index-btn{
+  height: 56px;
+  background:#eeeeee;
+  line-height: 56px;
+}
+
+.mypage__purchased-product__title{
+  padding: 0 16px;
+  box-sizing: border-box;
+  background: #FAFAFA;
+  line-height:72px;
+  font-weight: bold;
+}
+
+.mypage__purchased-product__tab-container__content__text{
+  padding:60px 0 60px;
+  background: #ffffff;
+  text-align:center;
+  color:#cccccc;
 }
