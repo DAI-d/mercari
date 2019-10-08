@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'tests/credit'
   get 'tests/index'
   get 'tests/newuser3'
+  get 'tests/mypage_profile'
+  get 'tests/phone_number'
 
   resources :products, only: [:index, :show] 
 

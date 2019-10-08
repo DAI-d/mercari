@@ -14,5 +14,9 @@ class TestsController < ApplicationController
 
   def newuser3
   end
+  def mypage_profile
+  end
+  def phone_number
+  end
 
 end
