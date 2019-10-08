@@ -1,7 +1,8 @@
-.l-container{
+*{
+  box-sizing: border-box;
+}
+body{
   background-color: #F5F5F5;
-  height:100vh;
-  width:100vw;
 }
 
 .profile{
@@ -10,60 +11,77 @@
   margin: 0 auto;
   text-align: center;
   
-  .profile_upper{
+  
+  &__upper{
     width: 700px;
     height: 50px;
+    line-height: 50px;
     font-size: 24px;
     background-color:white;
   }
-  .profile_center{
+
+  &__center{
     width: 700px;
     height: 156px;
     background: url(download.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
-    .profile_center_icon{
+    
+
+
+    &__icon{
+      
       .profile_icon{
         width: 60px;
         height: 60px;
         border: 1px solid  none;
         border-radius: 50%;
+        
       }
     }
-    .profile_center_nickname{
+
+    &__nickname{
+
       .nickname{
         width: 220px;
         height: 48px;
         margin: 0px  0px  0px 8px;
-        padding: 10px 16px 8px 16px;
+        -webkit-border-radius:4px;
       }
     }
+
   }
-  .profile_lower{
+
+  &__lower{
     width: 700px;
     height: 300px;
-    margin: 40px 0px;
+    padding: 40px 0px;
     background-color:white;
-    .profile_lower_textarea{
+
+    &__textarea{
       height: 216px;
       text-align: center;
       padding: 10px;
+
       .introduction{
       resize: vertical;// 高さのみ広がるテキストエリア
       min-width:668px;
       min-height: 216px;
+      padding: 10px;
       }
     }
-    .profile_lower_button{
+
+    &__button{
       width: 668px;
       height: 50px;
       margin: 16px 0px 0px 0px;
-      background-color: red;
+      background-color:#EA352E;
+
       .btn{
         width: 668px;
         height: 50px;
-        background-color: red;
+        background-color: #EA352E;
         color: white;
       }
     }
