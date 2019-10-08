@@ -20,6 +20,7 @@
   }
   input{
     width: 100%;
+    margin-bottom: 3px;
     padding-left: 10px;
     border-radius: 3px;
     line-height: 28px;
@@ -34,7 +35,7 @@
   button{
     display: block;
     width: 100%;
-    margin-top: 20px;
+    margin: 20px 0 5px;
     padding: 10px 0;
     background-color: #EA352D;
     text-align: center;
@@ -45,6 +46,15 @@
     margin-left: 8px;
     padding: 0 3px;
     background-color: #EA352D;
+    border-radius: 2px;
+    font-size: 9px;
+    font-weight: normal;
+    color: white;
+  }
+  .null-true{
+    margin-left: 8px;
+    padding: 0 3px;
+    background-color: #cccccc;
     border-radius: 2px;
     font-size: 9px;
     font-weight: normal;
@@ -63,6 +73,7 @@
       a{
         display: flex;
         justify-content: flex-end;
+        margin-top: 5px;
         color: #0099E8;
         font-size: 10px;
         text-decoration: none;
