@@ -12,5 +12,7 @@
         %li fa カテゴリーから探す
         %li fa ブランドから探す
       %ul.header-container__lower--right
-        %li.new-user-resistration 新規会員登録
-        %li.log-in ログイン
+        %li.new-user-resistration 
+          = link_to "新規会員登録", new_user_registration_path
+        %li.log-in 
+          = link_to "ログイン", new_user_session_path

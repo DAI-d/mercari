@@ -1,0 +1,19 @@
+.my-page-container
+  .my-page-container--upper
+    .login-page
+      %p アカウントをお持ちでない方はこちら
+      .new-user-button
+        = link_to "新規会員登録"
+  .my-page-container--lower
+    .my-page-container--lower--inner
+      = form_for "" do |f|
+        -# facebookとgoogle////////////////////////////////////
+
+        
+        = f.text_field :nickname, placeholder: "メールアドレス"
+        = f.text_field :nickname, placeholder: "パスワード"
+        私はロボットではありません。
+        = f.button "ログイン"
+      = link_to do
+        %h6 パスワードをお忘れの方
+        %span >

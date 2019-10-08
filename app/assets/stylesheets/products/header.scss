@@ -49,16 +49,31 @@ header{
           background-color: #EA352D;
           line-height: 20px;
           font-size: 10px;
-          color: white;
           border-radius: 3px;
+          a{
+            color: white;
+            text-decoration: none;
+          }
         }
         .log-in{
           margin: 5px;
           padding: 0px 6px;
           line-height: 20px;
-          color: #0099E8;
           border: 1px solid #0099E8;
           border-radius: 3px;
+          &:hover{
+            background-color: #0099E8;
+            transition: 0.3s ease-in-out;
+          }
+          a{
+            display: block;
+            color: #0099E8;
+            text-decoration: none;
+            &:hover{
+              color: white;
+              transition: 0.3s ease-in-out;
+            }
+          }
         }
       }
     }
