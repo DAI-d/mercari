@@ -7,10 +7,6 @@
     letter-spacing: 2px;
     &__card{
       margin: 15px 0 0;
-      &--upper{
-        display: flex;
-        justify-content: flex-start;
-      }
       &--center{
         margin-top: 6px;
       }
@@ -20,11 +16,6 @@
     }
     &__deadlile{
       margin-top: 10px;
-      &--upper{
-        display: flex;
-        justify-content: flex-start;
-        
-      }
       &--lower{
         display: flex;
         margin-top: 6px;
@@ -67,10 +58,6 @@
     }
     &__cvc{
       margin-top: 10px;
-      &--upper{
-        display: flex;
-        justify-content: flex-start;
-      }
       &--center{
         margin-top: 6px;
       }

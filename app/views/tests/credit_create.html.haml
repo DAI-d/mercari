@@ -9,7 +9,7 @@
     .my-page-container--lower
       .form
         .form__card
-          .form__card--upper
+          .form__card--upper.null-null
             %h5 カード番号
             %span.null-false 必須
           .form__card--center
@@ -17,7 +17,7 @@
           .form__card--lower
             -# = image_tag "credit-cards", height: "18"
         .form__deadlile
-          .form__deadlile--upper
+          .form__deadlile--upper.null-null
             %h5 有効期限
             %span.null-false 必須
           .form__deadlile--lower
@@ -53,7 +53,7 @@
                 %option{value: "29"} 29
               　年
         .form__cvc
-          .form__cvc--upper
+          .form__cvc--upper.null-null
             %h5 セキュリティコード
             %span.null-false 必須
           .form__cvc--center
