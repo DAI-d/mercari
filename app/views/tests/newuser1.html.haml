@@ -19,7 +19,7 @@
         .null-null
           %h5 パスワード（確認）
           %span.null-false 必須
-        = f.password_field :password, placeholder: "7文字以上"
+        = f.password_field :password_confirmation, placeholder: "7文字以上"
         .div
         %h5.margin-top 本人確認
         %p 安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。他のお客さまに公開されることはありません。
@@ -49,7 +49,7 @@
         %p ※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。
         私はロボットではありませんボックス
         「次へ進む」のボタンを押すことにより、利用規約に同意したものとみなします
-        = f.button "次へ進む"
+        = f.submit "次へ進む", class: 'button'
       = link_to do
         %h6 本人情報の登録について
         %span >
