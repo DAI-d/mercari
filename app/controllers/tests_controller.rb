@@ -12,4 +12,7 @@ class TestsController < ApplicationController
   def credit
   end
 
+  def newuser1
+  end
+
 end
