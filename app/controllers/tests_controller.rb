@@ -5,5 +5,11 @@ class TestsController < ApplicationController
 
   def mercari
   end
+  
+  def credit_create
+  end
+
+  def credit
+  end
 
 end
