@@ -13,6 +13,7 @@ class TestsController < ApplicationController
   end
 
   def newuser1
+    binding.pry
   end
 
 end
