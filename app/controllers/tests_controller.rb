@@ -12,8 +12,7 @@ class TestsController < ApplicationController
   def credit
   end
 
-  def newuser1
-    binding.pry
+  def newuser3
   end
 
 end
