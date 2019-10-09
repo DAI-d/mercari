@@ -2,17 +2,40 @@
   .header-container
     .header-container__upper
       %ul.header-container__upper--logo
-        %li
-          L
-        %li
-          mercari
+        = image_tag ("header-logo.png"), width: "160"
       %input{type: "text", placeholder: "何かお探しですか？"}
     .header-container__lower
       %ul.header-container__lower--left
-        %li fa カテゴリーから探す
-        %li fa ブランドから探す
-      %ul.header-container__lower--right
-        %li.new-user-resistration 
-          = link_to "新規会員登録", new_user_registration_path
-        %li.log-in 
-          = link_to "ログイン", new_user_session_path
+        %li.header-icon
+          = fa_icon("bars")
+          カテゴリーから探す
+        %li.header-icon
+          = fa_icon("tags")
+          ブランドから探す
+      .header-container__lower--right
+        - unless user_signed_in?
+          .new-user-resistration 
+            = link_to "新規会員登録", new_user_registration_path
+          .log-in 
+            = link_to "ログイン", new_user_session_path
+        - else
+          .header-block
+            = link_to new_user_registration_path, data: "いいね一覧" do
+              .font-awesome
+                = fa_icon('heart-o')
+              .signed-in いいね一覧
+          .header-block
+            = link_to new_user_session_path do
+              .font-awesome
+                = fa_icon('bell-o')
+              .signed-in お知らせ
+          .header-block
+            = link_to new_user_registration_path do
+              .font-awesome
+                = fa_icon('check')
+              .signed-in やることリスト
+          .header-block
+            = link_to users_path do
+              .font-awesome
+                = fa_icon('user')
+              .signed-in マイページ

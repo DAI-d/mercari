@@ -1,3 +1,4 @@
+= render '././shared/header'
 .mypage-area
   .mypage__content
     .mypage--left
@@ -9,9 +10,9 @@
         .my-page-container--lower
           .my-page-container--lower--inner
             = form_for "" do |f|
-              %h5 お客さまの本人情報をご登録ください。
-              %h5 登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
-              %h5 もっと見る＞
+              %h6 お客さまの本人情報をご登録ください。
+              %h6 登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
+              = link_to "本人確認書類のアップロードについて＞"
               .null-null
                 %h5 お名前
               =f.text_field :name
@@ -48,5 +49,5 @@
                 %h5 建物名
                 %span.null-true 任意
               =f.text_field :Building_name,placeholder: "例）柳ビル103"
-              =f.button "登録する"
-              %h5 本人情報の登録について
+              =f.button "登録する", class: "button"
+              = link_to "本人情報の登録について＞"
