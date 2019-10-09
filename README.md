@@ -195,6 +195,7 @@
 |------|----|-------|
 |name|string|null: false|
 - has_many :products
+- has_many :users
 
 ## likes
 |column|type|options|
