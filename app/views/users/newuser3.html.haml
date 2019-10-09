@@ -7,7 +7,7 @@
         .null-null
           %h5 お名前
           %span.null-false 必須
-        = f.text_field :nickname, placeholder: "例)山田"
+        = f.text_field :last_name, placeholder: "例)山田"
         = f.text_field :first_name, placeholder: "例)太郎"
         .null-null
           %h5 お名前カナ(全角)
@@ -27,15 +27,15 @@
           %span.null-false 必須
         = f.password_field :password, placeholder: "例)横浜市緑区"
         .null-null
-          %h5　番地 
+          %h5 番地 
           %span.null-false 必須
         = f.text_field :last_name, placeholder: "例)青山1-1-1"
         .null-null
-          %h5　建物名 
+          %h5 建物名 
           %span.null-false 必須
         = f.text_field :last_name, placeholder: "例)柳ビル103"
         .null-null
-          %h5　電話
+          %h5 電話
           %span.null-false 必須
         = f.text_field :last_name, placeholder: "例)09012345678"
         = f.button "次へ進む"
