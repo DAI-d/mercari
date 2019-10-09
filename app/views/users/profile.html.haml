@@ -1,0 +1,32 @@
+-# = render '/header'
+%br
+.profile
+  = form_for(current_user) do |f|
+    .profile__upper
+      プロフィール
+    .profile__center
+      .profile__center__icon
+        =image_tag "s07_m.png", class: "profile_icon"
+      .profile__center__nickname
+        = f.text_field :nickname, placeholder: "例)AYA☆セール中", maxlength: "20", size: "40", class: "nickname", value: current_user.nickname
+    .profile__lower
+      .profile__lower__textarea
+        %textarea{maxlength: "1000", name: "introduction", class: "introduction", placeholder: "例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪" }
+        .profile__lower__button
+          = f.submit "変更する", class:"button"
+
+-# %br
+-# .profile
+-#   = form_for(current_user) do |f|
+-#     .profile__upper
+-#       プロフィール
+-#     .profile__center
+-#       .profile__center__icon
+-#         =image_tag "s07_m.png", class: "profile_icon"
+-#       .profile__center__nickname
+-#         = f.text_field :nickname, placeholder: "例)AYA☆セール中", maxlength: "20", size: "40", class: "nickname", value: current_user.nickname
+-#     .profile__lower
+-#       .profile__lower__textarea
+-#         %textarea{maxlength: "1000", name: "introduction", class: "introduction", placeholder: "例）こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪" }
+-#         .profile__lower__button
+-#           = f.submit "変更する", class:"button"

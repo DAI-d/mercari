@@ -57,9 +57,12 @@
         .side-bar--lower
           .side-bar--lower__title
             設定
-          = link_to root_path ,class: 'side-bar-link' do
+          = link_to users_profile_path(current_user) ,class: 'side-bar-link' do
             %li.side-bar--upper__menu プロフィール
             %i.icon-arrow-right
+          -# = link_to users_profile_path(current_user) ,class: 'side-bar-link' do
+          -#   %li.side-bar--upper__menu プロフィール
+          -#   %i.icon-arrow-right
           = link_to root_path ,class: 'side-bar-link' do
             %li.side-bar--upper__menu 発送元・お届け先住所変更
             %i.icon-arrow-right
@@ -75,7 +78,7 @@
           = link_to root_path ,class: 'side-bar-link' do
             %li.side-bar--upper__menu 電話番号の確認
             %i.icon-arrow-right
-          = link_to root_path ,class: 'side-bar-link' do
+          = link_to users_logout_path ,class: 'side-bar-link' do
             %li.side-bar--upper__menu ログアウト
             %i.icon-arrow-right
     .mypage--right
@@ -84,7 +87,7 @@
           .mypage__user-icon
             = image_tag 'user_default.png', class: 'user-icon'
             .mypage__user-name
-              TONURUMARU
+              = current_user.nickname
             .mypage__user-status
               評価
               %span 530000
