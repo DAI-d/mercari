@@ -12,11 +12,10 @@
   height: 1300px;
   padding:40px 0;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
-.mypage--left{
-  float: left;
-}
 
 .side-bar{
   width:280px;
@@ -70,7 +69,6 @@ li{
 }
 
 .mypage--right{
-  float: left;
   &__main{
     background: #ffffff;
     height:100%;

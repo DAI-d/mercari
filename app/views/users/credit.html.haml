@@ -1,19 +1,21 @@
-%br
-%br
-%br
-.my-page-container
-  .my-page-container--upper
-    %h2 支払い方法
-  .my-page-container--center
-    .my-page-container--center--inner
-      .my-page-container--center--inner--upper
-        %h3 クレジットカード一覧
-      .my-page-container--center--inner--lower
-        = link_to users_credit_create_path do
-          %span 円
-          %h5 クレジットカードを追加する
-  .my-page-container--lower
-    .my-page-container--lower--inner
-      = link_to "" do
-        %h6 支払い方法について
-        %span >
+.mypage-area
+  .mypage__content
+    .mypage--left
+      =render "side_bar"
+    .mypage--right
+      .my-page-container
+        .my-page-container--upper
+          %h2 支払い方法
+        .my-page-container--center
+          .my-page-container--center--inner
+            .my-page-container--center--inner--upper
+              %h3 クレジットカード一覧
+            .my-page-container--center--inner--lower
+              = link_to users_credit_create_path do
+                %span 円
+                %h5 クレジットカードを追加する
+        .my-page-container--lower
+          .my-page-container--lower--inner
+            = link_to "" do
+              %h6 支払い方法について
+              %span >

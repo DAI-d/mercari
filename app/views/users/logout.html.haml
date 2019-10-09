@@ -1,4 +1,9 @@
-.my-page-container
-  .my-page-container--lower
-    .my-page-container--lower--inner
-      = link_to 'ログアウト', destroy_user_session_path, method: :delete, class:'button'
+.mypage-area
+  .mypage__content
+    .mypage--left
+      =render "side_bar"
+    .mypage--right
+      .my-page-container
+        .my-page-container--lower
+          .my-page-container--lower--inner
+            = link_to 'ログアウト', destroy_user_session_path, method: :delete, class:'button'
