@@ -18,5 +18,7 @@ class TestsController < ApplicationController
   end
   def phone_number
   end
+  def mail_password
+  end
 
 end
