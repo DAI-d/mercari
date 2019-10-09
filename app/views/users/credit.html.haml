@@ -1,3 +1,4 @@
+= render '././shared/header'
 .mypage-area
   .mypage__content
     .mypage--left
@@ -9,11 +10,9 @@
         .my-page-container--center
           .my-page-container--center--inner
             .my-page-container--center--inner--upper
-              %h3 クレジットカード一覧
+              %h5 クレジットカード一覧
             .my-page-container--center--inner--lower
-              = link_to users_credit_create_path do
-                %span 円
-                %h5 クレジットカードを追加する
+              = link_to "円 クレジットカードを追加する", users_credit_create_path, class:"button"
         .my-page-container--lower
           .my-page-container--lower--inner
             = link_to "" do

@@ -1,3 +1,4 @@
+= render '././shared/header'
 .mypage-area
   .mypage__content
     .mypage--left
@@ -43,4 +44,4 @@
                 %h5 電話
                 %span.null-false 必須
               = f.text_field :last_name, placeholder: "例)09012345678"
-              = f.button "次へ進む"
+              = f.button "次へ進む", class:"button"

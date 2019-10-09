@@ -1,3 +1,4 @@
+= render '././shared/header'
 .mypage-area
   .mypage__content
     .mypage--left
@@ -10,9 +11,9 @@
           .my-page-container--lower--inner
             %h5 電話番号の入力
             %input{maxlength: "11", name: "phone_unmber", size: "40", type: "text", class: "number", placeholder: "携帯電話の番号を入力"}
-            %h5 本人確認のため、携帯電話のSMSショートメッセージサービスを利用して認証を行います。
+            %h6 本人確認のため、携帯電話のSMSショートメッセージサービスを利用して認証を行います。
             .my-page-container--lower__button
-              %button SMSを送信する
-              %h5 ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに後悔されることはありません。
+              %button.button SMSを送信する
+              %h6 ※電話番号は本人確認や不正利用防止のために利用します。他のユーザーに後悔されることはありません。
               = link_to "" do
                 %h6 電話番号の確認が必要な理由>

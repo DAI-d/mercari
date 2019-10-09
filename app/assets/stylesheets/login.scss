@@ -1,25 +1,25 @@
 .my-page-container{
-  &--upper{
-    .login-page{
-      padding: 15px 0;
-      p{
-        font-size: 9px;
-      }
-      .new-user-button{
-        width: 60%;
-        height: 30px;
-        margin: 0 auto;
-        background-color: #0099E8;
-        border-radius: 3px;
-        a{
-          display: block;
-          justify-content: center !important;
-          color: white;
-          line-height: 30px;
-          font-size: 12px;
-          text-decoration: none;
-        }
-      }
+  .new-user{
+    padding-top: 30px;
+    text-align: center;
+    p{
+      font-size: 12px;
+    }
+  }
+  .new-user-button{
+    width: 70%;
+    margin: 0 auto;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #0099E8;
+    border-radius: 3px;
+    a{
+      display: block;
+      justify-content: center !important;
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
     }
   }
 }
