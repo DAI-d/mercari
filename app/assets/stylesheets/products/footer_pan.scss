@@ -10,9 +10,9 @@
       display: flex;
       a{
         text-decoration: none;
-        color: #333333;
+        color: $mercari_black;
         &:hover{
-          border-bottom: 0.5px #333333 solid;
+          border-bottom: 0.5px $mercari_black solid;
           opacity: 0.7;
         }
       }

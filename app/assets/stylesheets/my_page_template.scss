@@ -32,7 +32,7 @@
     border: 0.5px solid #CECECE;
     &:focus{
       outline: 0;
-      border: 0.5px solid #0099E8;
+      border: 0.5px solid $mercari_blue;
     }
   }
   .button{
@@ -41,7 +41,7 @@
     height: 50px;
     margin: 30px 0 5px;
     padding: 0 10px;
-    background-color: #EA352D;
+    background-color: $mercari_red;
     text-align: center;
     border: none;
     color: white;
@@ -55,7 +55,7 @@
   .null-false{
     margin-left: 8px;
     padding: 0 3px;
-    background-color: #EA352D;
+    background-color: $mercari_red;
     border-radius: 2px;
     font-size: 12px;
     font-weight: normal;
@@ -87,14 +87,14 @@
         display: flex;
         justify-content: flex-end;
         margin-top: 5px;
-        color: #0099E8;
+        color: $mercari_blue;
         font-size: 12px;
         text-decoration: none;
         &:hover{
           opacity: 0.7;
         }
         p:hover{
-          border-bottom: 0.5px solid #0099E8;
+          border-bottom: 0.5px solid $mercari_blue;
         }
       }
     }
