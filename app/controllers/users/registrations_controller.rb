@@ -4,6 +4,22 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
+
+  def sns
+    @user = User.new(
+      nickname: session[:nickname],
+      email: session[:email],
+      password: session[:password],
+      password_confirmation: session[:password]
+      )
+  end
+
+  def create
+    super
+    @user.uid = session[:uid]
+    @user.provider = session[:provider]
+    @user.save
+  end
   # GET /resource/sign_up
   # def new
   #   super

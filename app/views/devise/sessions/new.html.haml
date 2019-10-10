@@ -8,6 +8,8 @@
     .my-page-container--lower--inner
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         -# facebookとgoogle////////////////////////////////////
+        = link_to "Facebookでログイン", user_facebook_omniauth_authorize_path
+        = link_to "Googleでログイン", user_google_oauth2_omniauth_authorize_path
         = f.email_field :email, placeholder: "メールアドレス"
         = f.password_field :password, placeholder: "パスワード"
         私はロボットではありません。
