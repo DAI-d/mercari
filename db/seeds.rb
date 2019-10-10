@@ -508,31 +508,31 @@ ticket_other = ticket.children.create(name:"その他")
 
 transportation = Category.create(name: "自動車・オートバイ")
 
-transportation_car = ticket.children.create(name:"自動車本体")
+transportation_car = transportation.children.create(name:"自動車本体")
 transportation_car.children.create([{name:"国内自動車本体"}, {name:"外国自動車本体"}])
 
-transportation_vehicle = ticket.children.create(name:"自動車タイヤ/ホイール")
+transportation_vehicle = transportation.children.create(name:"自動車タイヤ/ホイール")
 transportation_vehicle.children.create([{name:"タイヤ/ホイールセット"}, {name:"タイヤ"}, {name:"ホイール"}, {name:"その他"}])
 
-transportation_carparts = ticket.children.create(name:"自動車パーツ")
+transportation_carparts = transportation.children.create(name:"自動車パーツ")
 transportation_carparts.children.create([{name:"サスペンション"}, {name:"ブレーキ"}, {name:"外装、エアロパーツ"}, {name:"外装、エアロパーツ"},
                                         {name:"ライト"}, {name:"内装品、シート"}, {name:"ステアリング"}, {name:"マフラー・排気系"},
                                         {name:"エンジン、過給機、冷却装置"}, {name:"クラッチ、ミッション、駆動系"}, {name:"電装品"}, {name:"補強パーツ"},
                                         {name:"汎用パーツ"}, {name:"外国自動車用パーツ"}, {name:"その他"}])
 
-transportation_caraccessories = ticket.children.create(name:"自動車アクセサリー")
+transportation_caraccessories = transportation.children.create(name:"自動車アクセサリー")
 transportation_caraccessories.children.create([{name:"車内アクセサリー"}, {name:"カーナビ"}, {name:"カーオディオ"}, {name:"車外アクセサリー"},
                                               {name:"メンテナンス用品"}, {name:"チャイルドシート"}, {name:"ドライブレコーダー"}, {name:"レーダー探知機"},
                                               {name:"カタログ/マニュアル"}, {name:"セキュリティ"}, {name:"ETC"}, {name:"その他"},
                                               {name:"汎用パーツ"}, {name:"外国自動車用パーツ"}, {name:"オートバイ車体"}, {name:"その他"}])
 
-transportation_bikeparts = ticket.children.create(name:"オートバイパーツ")
+transportation_bikeparts = transportation.children.create(name:"オートバイパーツ")
 transportation_bikeparts.children.create([{name:"タイヤ"}, {name:"マフラー"}, {name:"エンジン、冷却装置"}, {name:"カウル、フェンダー、外装"},
                                           {name:"サスペンション"}, {name:"ホイール"}, {name:"シート"}, {name:"ブレーキ"}, {name:"タンク"},
                                           {name:"ライト、ウィンカー"}, {name:"チェーン、スプロケット、駆動系"}, {name:"メーター"}, {name:"電装系"},
                                           {name:"ミラー"}, {name:"外国オートバイ用パーツ"}, {name:"その他"}])
 
-transportation_bikeaccessories = ticket.children.create(name:"オートバイアクセサリー")
+transportation_bikeaccessories = transportation.children.create(name:"オートバイアクセサリー")
 transportation_bikeaccessories.children.create([{name:"ヘルメット/シールド"}, {name:"バイクウェア"}, {name:"アクセサリー"}, {name:"メンテナンス"},
                                                 {name:"カタログ/マニュアル"}, {name:"その他"}])
 
