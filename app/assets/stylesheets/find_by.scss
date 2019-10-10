@@ -20,15 +20,15 @@
     background-color: white;
     &:hover{
       .fa{
-        color: #EA352D;
+        color: $mercari_red;
       }
     }
     a{
       display: block;
-      color: #333333;
+      color: $mercari_black;
       text-decoration: none;
       &:hover{
-        color: #0099E8;
+        color: $mercari_blue;
       }
     }
     .fa{
@@ -39,7 +39,7 @@
       .category-first{
         visibility: visible;
         > li:hover{
-          background-color: #EA352D;
+          background-color: $mercari_red;
           > a{
             color: white;
           }
@@ -69,7 +69,7 @@
         line-height: 45px;
       }
       a{
-        color: #333333;
+        color: $mercari_black;
       }
       .category-second{
         position: absolute;

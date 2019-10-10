@@ -33,7 +33,7 @@ header{
           font-size: 16px;
           &:focus{
             outline: 0;
-            border: 0.5px solid #0099E8;
+            border: 0.5px solid $mercari_blue;
           }
         }
         .fa{
@@ -54,7 +54,7 @@ header{
       &--left{
         display: flex;
         .fa{
-          color: #EA352D;
+          color: $mercari_red;
         }
         li{
           margin-right: 20px;
@@ -65,7 +65,7 @@ header{
         .new-user-resistration{
           margin: 5px;
           padding: 0px 10px;
-          background-color: #EA352D;
+          background-color: $mercari_red;
           line-height: 30px;
           font-size: 14px;
           border-radius: 3px;
@@ -80,15 +80,15 @@ header{
           padding: 0px 10px;
           line-height: 30px;
           font-size: 14px;
-          border: 1px solid #0099E8;
+          border: 1px solid $mercari_blue;
           border-radius: 3px;
           &:hover{
-            background-color: #0099E8;
+            background-color: $mercari_blue;
             transition: 0.3s ease-in-out;
           }
           a{
             display: block;
-            color: #0099E8;
+            color: $mercari_blue;
             text-decoration: none;
             &:hover{
               color: white;
@@ -102,7 +102,7 @@ header{
             display: flex;
             text-decoration: none;
             &:hover{
-              color: #0099E8;
+              color: $mercari_blue;
               transition: 0.3s ease-in-out;
             }
             .font-awesome{

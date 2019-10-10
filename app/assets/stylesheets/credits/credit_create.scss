@@ -36,7 +36,7 @@
             border: 0.5px solid #CECECE;
             &:focus{
               outline: 0;
-              border: 0.5px solid #0099E8;
+              border: 0.5px solid $mercari_blue;
             }
           }
         }
@@ -54,7 +54,7 @@
             border: 0.5px solid #CECECE;
             &:focus{
               outline: 0;
-              border: 0.5px solid #0099E8;
+              border: 0.5px solid $mercari_blue;
             }
           }
         }
@@ -67,7 +67,7 @@
       &--lower{
         display: flex;
         justify-content: flex-end;
-        color: #0099E8;
+        color: $mercari_blue;
         font-size: 8px;
       }
     }

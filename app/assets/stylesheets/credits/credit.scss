@@ -18,7 +18,7 @@
           display: flex;
           justify-content: center;
           padding: 8px 0;
-          background-color: #EA352D;
+          background-color: $mercari_red;
           text-decoration: none;
           text-align: center;
           color: white;
@@ -35,14 +35,14 @@
       a{
         display: flex;
         justify-content: flex-end;
-        color: #0099E8;
+        color: $mercari_blue;
         font-size: 10px;
         text-decoration: none;
         &:hover{
           opacity: 0.7;
         }
         p:hover{
-          border-bottom: 0.5px solid #0099E8;
+          border-bottom: 0.5px solid $mercari_blue;
         }
       }
     }

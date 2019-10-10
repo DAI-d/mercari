@@ -53,7 +53,7 @@ body{
         border: 0.5px solid gray;
         &:focus{
           outline: 0;
-          border: 0.5px solid #0099E8;
+          border: 0.5px solid $mercari_blue;
         }
       }
     }
@@ -79,7 +79,7 @@ body{
         padding: 10px;
         &:focus{
           outline: 0;
-          border: 0.5px solid #0099E8;
+          border: 0.5px solid $mercari_blue;
         }
       }
     }
@@ -89,7 +89,7 @@ body{
       height: 40px;
       margin: 20px 0 5px;
       padding: 0 10px;
-      background-color: #EA352D;
+      background-color: $mercari_red;
       text-align: center;
       border: none;
       color: white;

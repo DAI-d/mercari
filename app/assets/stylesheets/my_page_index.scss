@@ -1,6 +1,6 @@
 .mypage__header{
   height:150px;
-  background: #3D3D3D;
+  background: $mercari_black;
 }
 
 .mypage-area{
@@ -61,8 +61,8 @@
   text-decoration: none;
 }
 
-a:link{color:#3D3D3D;}
-a:visited{color:#3D3D3D;}
+a:link{color:$mercari_black;}
+a:visited{color:$mercari_black;}
 
 li{
   list-style: none;
@@ -114,7 +114,7 @@ li{
 .mypage__tab-container__tab{
   display:flex;
   height:74px;
-  color:#333333;
+  color:$mercari_black;
   font-weight: bold;
   &--left{
     width:50%;
@@ -136,7 +136,7 @@ li{
   display:flex;
   min-height: 80px;
   padding: 16px;
-  color: #333;
+  color: $mercari_black;
   border-bottom: solid #F5F5F5 1px;
   box-sizing: border-box;
 }
@@ -155,7 +155,7 @@ li{
   height: 56px;
   margin: 0 auto;
   background: #eee;
-  color: #333;
+  color: $mercari_black;
   line-height: 56px;
   text-align: center;
 }
