@@ -1,0 +1,43 @@
+%ul.find-by-ul
+  %li.find-by-li
+    = fa_icon("bars")
+    %a.category-top{:href => "#"} カテゴリーから探す
+    %ul.category-first.hidden-ul
+      / 第一階層
+      - @categories.each do |category|
+        %li
+          = link_to "" do
+            = category.name
+          %ul.category-second.hidden-ul
+            / 第二階層
+            - category.children.each do |child|
+              %li
+                = link_to "" do
+                  = child.name
+                %ul.category-third.hidden-ul
+                  / 第三階層
+                  - child.children.each do |grandchild|
+                    %li
+                      = link_to "" do
+                        = grandchild.name
+  %li.find-by-li
+    = fa_icon('tags')
+    %a.category-top{:href => "#"} ブランドから探す
+    %ul.category-first.hidden-ul
+      / 第一階層
+      - @categories.each do |category|
+        %li
+          = link_to "" do
+            = category.name
+          %ul.category-second.hidden-ul
+            / 第二階層
+            - category.children.each do |child|
+              %li
+                = link_to "" do
+                  = child.name
+                %ul.category-third.hidden-ul
+                  / 第三階層
+                  - child.children.each do |grandchild|
+                    %li
+                      = link_to "" do
+                        = grandchild.name

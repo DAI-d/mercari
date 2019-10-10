@@ -1,5 +1,5 @@
 .img{
-  height: 170px;
+  height: 200px;
   background-size: cover;
   background-image: url('footer.png');
 }
@@ -13,14 +13,14 @@
       display: flex;
       justify-content: space-between;
       .list-title{
-        font-size: 10px;
-        line-height: 1.5rem;
+        font-size: 14px;
+        line-height: 4rem;
         font-weight: bold;
         color: white;
       }
       .list-list{
-        font-size: 8px;
-        line-height: 1.5rem;
+        font-size: 12px;
+        line-height: 2rem;
         a{
           color: #b9b9b9;
           text-decoration: none;
@@ -33,12 +33,14 @@
         color: #222222;
         font-size: 12px;
         font-weight: bold;
+        line-height: 4rem;
       }
     }
     &--lower{
       display: flex;
       justify-content: space-between;
       color: white;
+      padding-bottom: 20px;
       &--left:hover{
         opacity: 0.7;
       }
@@ -47,12 +49,12 @@
         text-align: center;
         .copyright{
           line-height: 30px;
-          font-size: 13px;
+          font-size: 16px;
           letter-spacing: 2px;
         }
         .copyright-text{
           line-height: 30px;
-          font-size: 8px;
+          font-size: 12px;
         }
       }
       &--right{
