@@ -18,10 +18,8 @@
     width: 180px;
     padding-left: 10px;
     background-color: white;
-    &:hover{
-      .fa{
-        color: $mercari_red;
-      }
+    .fa{
+      color: $mercari_red;
     }
     a{
       display: block;
